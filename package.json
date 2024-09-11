@@ -1,0 +1,39 @@
+{
+	"name": "@rbxts/create-shared-toolbar",
+	"version": "1.0.0",
+	"description": "A library that helps you create a shared plugin toolbar for your plugins.",
+	"main": "out/init.lua",
+	"repository": "https://github.com/howmanysmall/create-shared-toolbar.git",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": ["plugins"],
+	"author": "Stravant",
+	"license": "MIT",
+	"types": "out/index.d.ts",
+	"files": ["out", "!**/*.tsbuildinfo"],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@rbxts/compiler-types": "2.3.0-types.2",
+		"@rbxts/types": "^1.0.805",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-perfectionist": "^2.11.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.36",
+		"eslint-plugin-unicorn": "^55.0.0",
+		"prettier": "^3.3.3",
+		"roblox-ts": "next",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"@rbxts/services": "^1.5.5"
+	}
+}
